@@ -1,0 +1,139 @@
+---
+// Navigation - responsive with active links and free session conversion anchor
+import Container from '@/components/Container.astro';
+import { SITE } from '@/config/site';
+
+export interface Props {
+  logo?: string;
+}
+
+const { logo = SITE.name } = Astro.props;
+---
+
+<header id="navbar" class="sticky top-0 z-40 bg-background/95 backdrop-blur-lg border-b border-border transition-colors" data-ps="src/components/Navigation.astro:dt8k87">
+  <nav class="py-3.5" data-ps="src/components/Navigation.astro:m59h3b">
+    <Container class="flex justify-between items-center">
+      <a href="/" class="flex items-center gap-2.5 no-underline group" data-ps="src/components/Navigation.astro:kd8n5y">
+        <div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-primary-foreground font-black text-lg shadow-sm group-hover:scale-105 transition-transform" data-ps="src/components/Navigation.astro:gqvsdb">
+          PP
+        </div>
+        <div class="flex flex-col" data-ps="src/components/Navigation.astro:gqvsdc">
+          <span class="text-base font-extrabold tracking-tight text-foreground leading-none" data-ps="src/components/Navigation.astro:i2om69">
+            Portland Personal Training
+          </span>
+          <span class="text-[11px] font-semibold text-primary uppercase tracking-wider mt-0.5" data-ps="src/components/Navigation.astro:i2om6a">
+            At Lloyd Athletic Club
+          </span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-6" data-ps="src/components/Navigation.astro:gqvsdc">
+        <div class="hidden lg:flex gap-7 items-center" data-ps="src/components/Navigation.astro:gqvsdd">
+          <a href="/#specialties" class="text-sm font-semibold text-foreground hover:text-primary no-underline transition-colors" data-ps="src/components/Navigation.astro:nav-spec">Specialties</a>
+          <a href="/#how-it-works" class="text-sm font-semibold text-foreground hover:text-primary no-underline transition-colors" data-ps="src/components/Navigation.astro:nav-how">How It Works</a>
+          <a href="/#community" class="text-sm font-semibold text-foreground hover:text-primary no-underline transition-colors" data-ps="src/components/Navigation.astro:nav-comm">Who We Train</a>
+          <a href="/#reviews" class="text-sm font-semibold text-foreground hover:text-primary no-underline transition-colors" data-ps="src/components/Navigation.astro:nav-rev">Reviews</a>
+          <a href="/blog" class="text-sm font-semibold text-foreground hover:text-primary no-underline transition-colors" data-ps="src/components/Navigation.astro:nav-blog">Blog</a>
+          <a href="/#careers" class="text-sm font-semibold text-accent-orange hover:text-accent-orange/80 no-underline transition-colors flex items-center gap-1" data-ps="src/components/Navigation.astro:nav-car">
+            <span data-ps="src/components/Navigation.astro:i2om6b">Trainer Careers</span>
+            <span class="text-[10px] px-1.5 py-0.5 rounded-full bg-accent-orange/15 font-bold" data-ps="src/components/Navigation.astro:i2om6c">70% Split</span>
+          </a>
+        </div>
+
+        <div class="hidden sm:flex items-center gap-3" data-ps="src/components/Navigation.astro:gqvsdd">
+          <a href="/#session_form" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full font-bold text-sm bg-primary text-primary-foreground hover:bg-primary-hover shadow-md hover:shadow-lg transition-all no-underline hover-lift" data-ps="src/components/Navigation.astro:7vkjs9">
+            Claim Free Session
+          </a>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="lg:hidden p-2 text-foreground hover:text-primary rounded-lg focus:outline-none"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-ps="src/components/Navigation.astro:5ds1">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </Container>
+  </nav>
+
+  <div
+    id="mobile-menu"
+    class="hidden lg:hidden overflow-hidden bg-surface border-t border-border shadow-xl"
+    role="navigation"
+    aria-label="Mobile navigation"
+    data-ps="src/components/Navigation.astro:gqvsde">
+    <nav class="flex flex-col py-5 px-6 gap-3" data-ps="src/components/Navigation.astro:m59h3a">
+      <a href="/#specialties" class="text-base font-semibold text-foreground py-2 no-underline hover:text-primary transition-colors border-b border-border/60" data-ps="src/components/Navigation.astro:7vkjsa">Training Specialties</a>
+      <a href="/#how-it-works" class="text-base font-semibold text-foreground py-2 no-underline hover:text-primary transition-colors border-b border-border/60" data-ps="src/components/Navigation.astro:7vkjsb">How It Works</a>
+      <a href="/#community" class="text-base font-semibold text-foreground py-2 no-underline hover:text-primary transition-colors border-b border-border/60" data-ps="src/components/Navigation.astro:7vkjsc">Who We Train (Inclusivity)</a>
+      <a href="/#reviews" class="text-base font-semibold text-foreground py-2 no-underline hover:text-primary transition-colors border-b border-border/60" data-ps="src/components/Navigation.astro:7vkjsd">Member Reviews</a>
+      <a href="/blog" class="text-base font-semibold text-foreground py-2 no-underline hover:text-primary transition-colors border-b border-border/60" data-ps="src/components/Navigation.astro:7vkjse">Health & Fitness Blog</a>
+      <a href="/#careers" class="text-base font-semibold text-accent-orange py-2 no-underline flex items-center justify-between border-b border-border/60" data-ps="src/components/Navigation.astro:7vkjsf">
+        <span data-ps="src/components/Navigation.astro:i2om6d">Trainer Careers</span>
+        <span class="text-xs px-2 py-0.5 rounded-full bg-accent-orange/15 font-bold" data-ps="src/components/Navigation.astro:i2om6e">70% Split</span>
+      </a>
+      <div class="pt-3" data-ps="src/components/Navigation.astro:gqvsde">
+        <a href="/#session_form" class="w-full text-center inline-block px-6 py-3 rounded-full font-bold text-base bg-primary text-primary-foreground hover:bg-primary-hover shadow-md no-underline" data-ps="src/components/Navigation.astro:kd8n5q">
+          Claim Free Session
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script is:inline>
+  const navbar = document.getElementById('navbar');
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIconOpen = document.getElementById('menu-icon-open');
+  const menuIconClose = document.getElementById('menu-icon-close');
+
+  function updateNavbar() {
+    if (window.scrollY > 30) {
+      navbar?.classList.add('shadow-md');
+    } else {
+      navbar?.classList.remove('shadow-md');
+    }
+  }
+  window.addEventListener('scroll', updateNavbar, { passive: true });
+  updateNavbar();
+
+  function toggleMenu() {
+    const isOpen = !mobileMenu?.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu?.classList.add('hidden');
+      menuIconOpen?.classList.remove('hidden');
+      menuIconClose?.classList.add('hidden');
+      mobileMenuButton?.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu?.classList.remove('hidden');
+      menuIconOpen?.classList.add('hidden');
+      menuIconClose?.classList.remove('hidden');
+      mobileMenuButton?.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  mobileMenuButton?.addEventListener('click', toggleMenu);
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+      menuIconOpen?.classList.remove('hidden');
+      menuIconClose?.classList.add('hidden');
+      mobileMenuButton?.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !mobileMenu?.classList.contains('hidden')) {
+      toggleMenu();
+    }
+  });
+</script>

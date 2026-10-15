@@ -1,0 +1,84 @@
+---
+// Split-composition hero pairing high-contrast inclusive message with real personal training imagery
+import Container from '@/components/Container.astro';
+---
+
+<section class="relative isolate bg-background py-10 md:py-16 lg:py-20 overflow-hidden" data-ps="src/components/home/Hero.astro:hero-sec">
+  <Container>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center" data-ps="src/components/home/Hero.astro:ecxgf3">
+      <!-- Left text zone: 7 cols (≥60% display text zone rule) -->
+      <div class="lg:col-span-7 flex flex-col items-start min-w-0" data-ps="src/components/home/Hero.astro:ecxgf4">
+        <!-- H1 is the first text in the hero -->
+        <h1 class="hero-animate text-h1 font-extrabold tracking-tight text-foreground mb-6 leading-[1.08]" data-ps="src/components/home/Hero.astro:h1-title">
+          Portland’s Most Affordable <span class="text-primary" data-ps="src/components/home/Hero.astro:z1i1wm">Personal Trainers!</span>
+        </h1>
+
+        <p class="hero-animate hero-animate-delay-1 text-lg sm:text-xl text-muted-foreground font-normal mb-8 max-w-2xl leading-relaxed" data-ps="src/components/home/Hero.astro:6uykn0">
+          Working with our trainers includes open access to our facilities: hot tubs, steam rooms, saunas, a cardio area, multiple weight rooms, over 25 group exercise classes per week, free parking, and a fantastic centralized Portland location!
+        </p>
+
+        <div class="hero-animate hero-animate-delay-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-8" data-ps="src/components/home/Hero.astro:ecxgf5">
+          <a href="#session_form" class="inline-flex items-center justify-center px-8 py-4 rounded-full font-extrabold text-base bg-primary text-primary-foreground hover:bg-primary-hover shadow-lg hover:shadow-xl transition-all no-underline hover-lift" data-ps="src/components/home/Hero.astro:8zc2o">
+            Claim Your Free Session
+          </a>
+          <a href="#community" class="inline-flex items-center justify-center px-7 py-4 rounded-full font-bold text-base bg-surface border-2 border-border text-foreground hover:border-accent-orange hover:text-accent-orange transition-all no-underline shadow-sm" data-ps="src/components/home/Hero.astro:8zc2p">
+            Meet Our Inclusive Team
+          </a>
+        </div>
+
+        <!-- Neighborhood mention for search visibility -->
+        <p class="hero-animate hero-animate-delay-3 text-xs sm:text-sm text-foreground/80 font-medium mb-4 flex items-center gap-1.5" data-ps="src/components/home/Hero.astro:ijv6za">
+          <span class="w-2 h-2 rounded-full bg-accent-orange" data-ps="src/components/home/Hero.astro:3f6ipd"></span>
+          Proudly serving those living in <strong>Irvington</strong>, <strong>Goose Hallow</strong>, and <strong>Beaumont - Wilshire</strong>.
+        </p>
+
+        <!-- Reassurance chips -->
+        <div class="hero-animate hero-animate-delay-3 flex flex-wrap items-center gap-3 pt-4 border-t border-border/80 w-full text-xs sm:text-sm font-semibold text-foreground/80" data-ps="src/components/home/Hero.astro:ecxgf6">
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface border border-border text-foreground" data-ps="src/components/home/Hero.astro:z1i1wl">
+            <svg class="w-4 h-4 text-accent-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            100% Free First Workout
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface border border-border text-foreground" data-ps="src/components/home/Hero.astro:z1i1wk">
+            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            No Sales Commission
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface border border-border text-foreground" data-ps="src/components/home/Hero.astro:z1i1wj">
+            <svg class="w-4 h-4 text-accent-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+            </svg>
+            Women & 50+ Welcoming
+          </span>
+        </div>
+      </div>
+
+      <!-- Right media zone: 5 cols -->
+      <div class="lg:col-span-5 relative" data-ps="src/components/home/Hero.astro:ecxgf7">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 aspect-[4/5] bg-surface" data-ps="src/components/home/Hero.astro:ecxgf8">
+          <img
+            src="https://images.pexels.com/photos/6455895/pexels-photo-6455895.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Personal trainer working one-on-one with a client during a workout at the gym"
+            loading="eager"
+            fetchpriority="high"
+            class="w-full h-full object-cover object-center" data-ps="src/components/home/Hero.astro:gfvoz1" />
+
+          <!-- Floating badge for native credibility anchor -->
+          <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-dark-background/95 backdrop-blur-md border border-dark-border shadow-xl text-dark-foreground" data-ps="src/components/home/Hero.astro:ecxgf9">
+            <div class="flex items-center gap-3" data-ps="src/components/home/Hero.astro:ecxgfa">
+              <div class="w-10 h-10 rounded-xl bg-accent-orange flex items-center justify-center text-white font-black text-lg shrink-0 shadow-md" data-ps="src/components/home/Hero.astro:ecxgfb">
+                8x
+              </div>
+              <div data-ps="src/components/home/Hero.astro:ecxgfc">
+                <p class="text-xs font-bold uppercase tracking-wider text-accent-orange" data-ps="src/components/home/Hero.astro:6uykmz">Voted Best Gym in Portland</p>
+                <p class="text-sm font-semibold text-dark-foreground" data-ps="src/components/home/Hero.astro:6uykmy">8 Consecutive Years at Lloyd Athletic Club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
